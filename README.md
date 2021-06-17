@@ -51,16 +51,15 @@ and a [Standford car dataset here:](http://ai.stanford.edu/~jkrause/cars/car_dat
 5. Weather influence on Mobility
 
 ##### Infrastructure
-1. Object recognition in crowd / Crowd Classifier
-
-2. Better Object ID
-   * YOLOv3 to YOLOv4
+1. Better Object ID
+   * Object recognition in crowd / Crowd Classifier
+   * YOLOv3 --> YOLOv4 --> [YOLOv5](https://github.com/ultralytics/yolov5), [PAFNet](https://paperswithcode.com/paper/pafnet-an-efficient-anchor-free-object), Rotate Anchor, [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)
    * Image pre-processing
      [Gamma correction or histogram transformations. Some examples are here:](https://scikit-image.org/docs/dev/api/skimage.exposure.html)
    * CV model trained on traffic camera datasets
      [STREET dataset](https://databank.illinois.edu/datasets/IDB-3671567)
 
-3. Edge Computing
+2. Edge Computing
    * Using edge device to extract traffic insights
      for example, [Papers with Code - Mobile Video Object Detection with Temporally-Aware Feature Maps](https://paperswithcode.com/paper/mobile-video-object-detection-with-temporally)
 
