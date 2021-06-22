@@ -11,12 +11,12 @@
 
 
 ### Data:
-Request for download link at <ins> data@pwfh.org</ins>, for data items <span style="color: red"> in red.</span>
+Request for download link at <ins> data@pwfh.org</ins>, for data items with this ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) 
 
 Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1kcdhjldl7wjmwwrxqd.s3-us-west-2.amazonaws.com/VanCom_Mobility_Data_User's_Guide_1.2.pdf)
 
 **Data from Cedar Academy Society:**
-1. <span style="color: red">Main Dataset</span>: 
+1. ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) Main Dataset 
    
    Time: December 1-31, 2020
    
@@ -30,7 +30,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
   * Data file screenshot![Data file:](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic2.png)
 
 
-2. <span style="color: red">60 min-gap raw images</span>
+2. ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) 60 min-gap raw images
    
    JPEG files from two camera stations have been pulled and stored below for your reference
    
@@ -45,13 +45,13 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 | :---         |     :---:      |
 | ![](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic4.png)   | ![](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic5.png)     | 
 
-3. <span style="color: red"> 15 min-gap extract data </span>
+3. ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) 15 min-gap extract data
 
    Time: October 10-16, 2020
    
    Assets: 364 location-based Assets in the City of Surrey, British Columbia, Canada
 
-4. <span style="color: red"> 2 min-gap raw images</span>
+4. ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) 2 min-gap raw images
 
    Time: May 5-11, 2020
    
@@ -95,7 +95,7 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
 
 2. GHG emission indexing
 
-   The idea is to project vehicle type and make recognition to Green House Gas emission. A starting point can be car recognition mechanism from image/video files, e.g., [here on Github](https://github.com/foamliu/Car-Recognition)
+   The idea is to project vehicle type/make recognition to Green House Gas emission. A starting point can be car recognition mechanism from image/video files, e.g., [here on Github](https://github.com/foamliu/Car-Recognition)
 
     and a [Standford car dataset here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
