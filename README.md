@@ -20,23 +20,30 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
    
    Time: December 1-31, 2020
    
-   Assets: 364 location-based Assets in the City of Surrey, British Columbia, Canada 
+   Assets: 364 location-based Assets in the City of Surrey, British Columbia, Canada
    
-   Description: The following is untampered, full-YOLOv3-extracted raw information in the data file. For that reason, please ignore the "MOV index" part (this is for clients who need aggregated and scaled data) in the Users' Guide. 
+   [![map](pic1.png)](https://api.mapbox.com/styles/v1/scotthughes/ckq7op9qz5zom17pj0pcv2y83.html?fresh=true&access_token=pk.eyJ1Ijoic2NvdHRodWdoZXMiLCJhIjoiY2p3bWg5OTc5MGJ0NzRha2VlbXFtOTZheSJ9.c4EyzyAn28dXg3HujMoarg#10.01/49.112/-122.7691)
 
-  * [Data description:]()
-  * [Data file:]()
+   Description: The file contains full-YOLOv3-extracted information from raw static image files. For that reason, please ignore the "MOV index" part (this is for clients who need aggregated and scaled data) in the Users' Guide. 
 
-<iframe src="https://api.mapbox.com/styles/v1/scotthughes/ckq7op9qz5zom17pj0pcv2y83.html?fresh=true&access_token=pk.eyJ1Ijoic2NvdHRodWdoZXMiLCJhIjoiY2p3bWg5OTc5MGJ0NzRha2VlbXFtOTZheSJ9.c4EyzyAn28dXg3HujMoarg#10.01/49.112/-122.7691">
-</iframe>
+  * Data Description file screenshot![Data description:](pic2.png)
+  * Data file screenshot![Data file:](pic3.png)
 
-2. <span style="color: red">60 min-gap raw images</span> jpeg files from two camera stations have been pulled and stored below for your reference
+
+2. <span style="color: red">60 min-gap raw images</span>
+   
+   JPEG files from two camera stations have been pulled and stored below for your reference
    
    Time: December 1-31, 2020
    
    Assets: 2 location-based Assets in the City of Surrey
-      * [104 Ave And 140 St (station name: enc_104_140_cam1)]()
-      * [104 Ave And City Hall Driveway (station name: enc_104egress_cityhall_cam1)]()
+      * 104 Ave And 140 St
+      * 104 Ave And City Hall Driveway
+
+
+| 104 Ave And 140 St(station name: enc_104_140_cam1)| 104 Ave And City Hall Driveway(station name: enc_104egress_cityhall_cam1) |
+| :---         |     :---:      |
+| ![](pic4.png)   | ![](pic5.png)     | 
 
 3. <span style="color: red"> 15 min-gap extract data </span>
 
@@ -48,20 +55,22 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 
    Time: May 5-11, 2020
    
-   Asset: 1 location-based Asset with station name: "enc_104_140_cam1"
+   Asset: 1 location-based Asset: 104 Ave And 140 St
 
 **Data and tools from other sources:**
-* [Interesting datasets on the City of Surrey here:](https://data.surrey.ca/dataset) 
+* [Interesting datasets](https://data.surrey.ca/dataset) on the City of Surrey here 
   
-  [and its 2015 Traffic Counts dataset:](https://data.surrey.ca/dataset/traffic-counts-2015)
+  and Surrey 2015 [Traffic Counts dataset](https://data.surrey.ca/dataset/traffic-counts-2015)
 
-  [Not all traffic signal location will have cameras](https://data.surrey.ca/dataset/traffic-signals)
+  Not all traffic signal location will have [cameras](https://data.surrey.ca/dataset/traffic-signals)
 
-* [StatCan boundary data (.shp file):](https://5rv1kcdhjldl7wjmwwrxqd.s3-us-west-2.amazonaws.com/lfsa000b16a_e.zip)
+* [StatCan boundary data (.shp file):](https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-eng.cfm)
+  
   [Road network in Surrey](https://data.surrey.ca/dataset?q=road&sort=score+desc%2C+metadata_modified+desc) and from [DataBC](https://catalogue.data.gov.bc.ca/dataset?q=road)
   
 * Geocoding tools:
-Two links that can give you inspiration of how to get information about the "features" of an intersection
+
+  The following links that can give you inspiration of how to get information about the "features" of an intersection
   
   * [OpenStreetMap: From Browser Querying to Python+R Manipulation](https://towardsdatascience.com/openstreetmap-from-browser-querying-to-python-r-manipulation-c8e4504ad709)
   * [Geocoding An Intersection with Open Street Map data](https://www.r-bloggers.com/2020/08/geocoding-an-intersection-with-open-street-map-data/)
@@ -81,18 +90,18 @@ Two links that can give you inspiration of how to get information about the "fea
 
 ### Potential Directions:
 ##### Applications
-1. [Mobility data in Real Estate context](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3770895)
+1. [Mobility data in Real Estate](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3770895) context
 and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea2021.exordo.com/programme/presentation/631)
 
 2. GHG emission indexing
 
-   [I was referring to here:](https://github.com/foamliu/Car-Recognition)
+   The idea is to project vehicle type and make recognition to Green House Gas emission. A starting point can be car recognition mechanism from image/video files, e.g., [here on Github](https://github.com/foamliu/Car-Recognition)
 
-    and a [Standford car dataset here:](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+    and a [Standford car dataset here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 3. Crime Prevention [[7]](#7)
 
-   [**_Minority Report_** kind of Crime Prevention research here:](https://ojs.aaai.org//index.php/ICWSM/article/view/7304)
+   The idea is a [**_Minority Report_** kind of mechanism](https://ojs.aaai.org//index.php/ICWSM/article/view/7304)
 
 4. Economic Recovery post Pandemic [[4]](#4)
     
@@ -123,15 +132,15 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
    * See Microsoft [Project Rocket](https://www.microsoft.com/en-us/research/project/live-video-analytics/) for [Vision Zero](https://en.wikipedia.org/wiki/Vision_Zero) -related projects insight
 
 ### Recent Update:
-* Partnership with industry leader SafeGraph:
+* VanCom partnership with industry leader SafeGraph:
 [Placekey + VanCom: Combining Anonymized Traffic Activity Datasets and POI Data for Advanced Analytics](https://www.placekey.io/blog/placekey-vancom)
 
 
 
 ### Related Projects:
-1. NeurIPS 2021’s competition [Traffic4cast:](https://www.iarai.ac.at/traffic4cast/)
+1. NeurIPS 2021’s competition [Traffic4cast](https://www.iarai.ac.at/traffic4cast/)
 2. Kaggle's Android smartphones high accuracy [GNSS datasets](https://www.kaggle.com/google/android-smartphones-high-accuracy-datasets?select=ION+GNSS+2020+Android+Raw+GNSS+Measurement+Datasets+for+Precise+Positioning.pdf)
-
+3. Standford car dataset [here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 
 ### References:
