@@ -22,12 +22,12 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
    
    Assets: 364 location-based Assets in the City of Surrey, British Columbia, Canada
    
-   [![map](pic1.png)](https://api.mapbox.com/styles/v1/scotthughes/ckq7op9qz5zom17pj0pcv2y83.html?fresh=true&access_token=pk.eyJ1Ijoic2NvdHRodWdoZXMiLCJhIjoiY2p3bWg5OTc5MGJ0NzRha2VlbXFtOTZheSJ9.c4EyzyAn28dXg3HujMoarg#10.01/49.112/-122.7691)
+   [![map](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic1.png)](https://api.mapbox.com/styles/v1/scotthughes/ckq7op9qz5zom17pj0pcv2y83.html?fresh=true&access_token=pk.eyJ1Ijoic2NvdHRodWdoZXMiLCJhIjoiY2p3bWg5OTc5MGJ0NzRha2VlbXFtOTZheSJ9.c4EyzyAn28dXg3HujMoarg#10.01/49.112/-122.7691)
 
    Description: The file contains full-YOLOv3-extracted information from raw static image files. For that reason, please ignore the "MOV index" part (this is for clients who need aggregated and scaled data) in the Users' Guide. 
 
-  * Data Description file screenshot![Data description:](pic2.png)
-  * Data file screenshot![Data file:](pic3.png)
+  * Data Description file screenshot![Data description:](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic2.png)
+  * Data file screenshot![Data file:](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic2.png)
 
 
 2. <span style="color: red">60 min-gap raw images</span>
@@ -43,7 +43,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 
 | 104 Ave And 140 St(station name: enc_104_140_cam1)| 104 Ave And City Hall Driveway(station name: enc_104egress_cityhall_cam1) |
 | :---         |     :---:      |
-| ![](pic4.png)   | ![](pic5.png)     | 
+| ![](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic4.png)   | ![](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic5.png)     | 
 
 3. <span style="color: red"> 15 min-gap extract data </span>
 
