@@ -53,7 +53,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 
 4. ![in red](https://via.placeholder.com/15/f03c15/000000?text=+) 2 min-gap raw images
 
-   Time: May 5-11, 2020
+   Time: May 2-3, 2020
    
    Asset: 1 location-based Asset: 104 Ave And 140 St
 
@@ -86,24 +86,28 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 * time
 * numpy
 * geopandas
-##### coming soon ....
+##### [coming soon] ....
 
 ### Potential Directions:
 ##### Applications
-1. [Mobility data in Real Estate](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3770895) context
+1. Traffic prediction. A survey can be found [here](https://arxiv.org/abs/1908.10218) [[9]](#9)
+
+2. [Mobility data in Real Estate](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3770895) context
 and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea2021.exordo.com/programme/presentation/631)
 
-2. GHG emission indexing
+3. <strike>GHG emission indexing</strike>
 
    The idea is to project vehicle type/make recognition to Green House Gas emission. A starting point can be car recognition mechanism from image/video files, e.g., [here on Github](https://github.com/foamliu/Car-Recognition)
 
-    and a [Standford car dataset here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+   and a [Standford car dataset here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html). 
+    
+   The challenge in this case is the low resolution of raw image/video files that makes ID of vehicles logo and shape of headlights impossible. 
 
-3. Crime Prevention [[7]](#7)
+4. Crime Prevention [[7]](#7)
 
    The idea is a [**_Minority Report_** kind of mechanism](https://ojs.aaai.org//index.php/ICWSM/article/view/7304)
 
-4. Economic Recovery post Pandemic [[4]](#4)
+5. Economic Recovery post Pandemic [[4]](#4)
     
     [Mobility and Engagement Index](https://www.dallasfed.org/research/mei) by the Federal Reserve Bank of Dallas
    
@@ -111,12 +115,17 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
     
     [Bloomberg article: High-Frequency Data Prove Their Staying Power With Fed’s Buy-In](https://www.bloomberg.com/news/articles/2020-09-15/high-frequency-data-prove-their-staying-power-with-fed-s-buy-in)
 
-5. Weather influence on Mobility
+6. Weather influence on Mobility
 
 ##### Infrastructure
-1. Better Object Detection
-   * Object recognition in crowd / Crowd Classifier [[1]](#1)
-   * Rolling window  
+1. Bias correction
+
+2. Metadata
+   
+3. Better Object Detection
+   * Crowd Counting / Crowd Classifier [[1]](#1)
+   * Rolling window
+   * [Background Subtraction](https://docs.opencv.org/3.4/d1/dc5/tutorial_background_subtraction.html) with OpenCV and a comprehensive intro [here](https://sites.google.com/site/backgroundsubtraction/test-sequences)
    * YOLOv3 --> YOLOv4 --> [YOLOv5](https://github.com/ultralytics/yolov5), [PAFNet](https://paperswithcode.com/paper/pafnet-an-efficient-anchor-free-object), Rotate Anchor, [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)
    * Image pre-processing
      
@@ -124,12 +133,40 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
    * CV model trained on traffic camera datasets [[6]](#6)
      
      [STREET dataset](https://databank.illinois.edu/datasets/IDB-3671567)
+   * Try [Yolov5](https://github.com/ultralytics/yolov5)
+    
+   Linux, inference with detect.py 
+   ```
+   # clone github repo
+    git clone https://github.com/ultralytics/yolov5.git
+    
+    # clear requirements and download pretrained model weights
+    cd yolov5
+    
+    pip install -r requirements.txt
+    
+    python detect.py --weights yolov5s.pt
+    python detect.py --weights yolov5m.pt
+    python detect.py --weights yolov5l.pt
+    python detect.py --weights yolov5x.pt
+    
+    # Try Yolov5 on static image files
+    
+    python detect.py --source 2020-12-06-23-22-42-enc_104_140_cam1.jpg --weights yolov5s.pt --project infer_yolov5s_2
+    
+    python detect.py --source 2020-12-06-23-22-42-enc_104_140_cam1.jpg --weights yolov5x.pt --project infer_yolov5s_3
 
-2. Edge Computing
+   ```
+4. Edge Computing
    * Using edge device to extract traffic insights [[3]](#3)
      
      for example, [Papers with Code - Mobile Video Object Detection with Temporally-Aware Feature Maps](https://paperswithcode.com/paper/mobile-video-object-detection-with-temporally)
    * See Microsoft [Project Rocket](https://www.microsoft.com/en-us/research/project/live-video-analytics/) for [Vision Zero](https://en.wikipedia.org/wiki/Vision_Zero) -related projects insight
+
+5. Hardware
+
+   * [ESP32](http://esp32.net/) and ESP32-CAM
+
 
 ### Recent Update:
 * VanCom partnership with industry leader SafeGraph:
@@ -137,12 +174,13 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
 
 
 
-### Related Projects:
+### Related Projects, Datasets, and Repositories:
 1. NeurIPS 2021’s competition [Traffic4cast](https://www.iarai.ac.at/traffic4cast/)
 2. Kaggle's Android smartphones high accuracy [GNSS datasets](https://www.kaggle.com/google/android-smartphones-high-accuracy-datasets?select=ION+GNSS+2020+Android+Raw+GNSS+Measurement+Datasets+for+Precise+Positioning.pdf)
-3. Standford car dataset [here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
-
-
+3. Standford car (type/make) dataset [here](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+4. [UA-DETRAC](https://detrac-db.rit.albany.edu/) dataset (detection/tracking), with research paper here [[8]](#8)
+5. [CVOnline - Compendium of Computer Vision](https://homepages.inf.ed.ac.uk/rbf/CVonline/Imagedbase.htm)
+6. NVidia [AI CITY CHALLENGE](https://www.aicitychallenge.org/)
 ### References:
 
 <a id="1">[1]</a> Understanding Traffic Density from Large-Scale Web Camera Data, Shanghang Zhang, Guanhang Wu, João P. Costeira, José M. F. Moura, arXiv:1703.05868 [cs.CV]
@@ -157,4 +195,8 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
 
 <a id="6">[6]</a> STREETS: A Novel Camera Network Dataset for Traffic Flow, Advances in Neural Information Processing Systems 32 (NeurIPS 2019)
 
-<a id="7">[7]</a> Leveraging Mobility Flows from Location Technology Platforms to Test Crime Pattern Theory in Large Cities, Cristina Kadar, Stefan Feuerriegel, Anastasios Noulas, Cecilia Mascolo, 	arXiv:2004.08263 [cs.CY]
+<a id="7">[7]</a> Leveraging Mobility Flows from Location Technology Platforms to Test Crime Pattern Theory in Large Cities, Cristina Kadar, Stefan Feuerriegel, Anastasios Noulas, Cecilia Mascolo, arXiv:2004.08263 [cs.CY]
+
+<a id="8">[8]</a> UA-DETRAC: A New Benchmark and Protocol for Multi-Object Detection and Tracking, Longyin Wen, Dawei Du, Zhaowei Cai, Zhen Lei, Ming-Ching Chang, Honggang Qi, Jongwoo Lim, Ming-Hsuan Yang, Siwei Lyu, 2020, arXiv:1511.04136 [cs.CV]
+
+<a id="9">[9]</a> Urban flows prediction from spatial-temporal data using machine learning: A survey, 	arXiv:1908.10218 [cs.LG]
