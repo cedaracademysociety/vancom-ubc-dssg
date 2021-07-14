@@ -157,6 +157,12 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
     python detect.py --source 2020-12-06-23-22-42-enc_104_140_cam1.jpg --weights yolov5x.pt --project infer_yolov5s_3
 
    ```
+   
+   * Try [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg) for Semantic Segmentation
+    
+   [AutoNue Challenge](http://cvit.iiit.ac.in/autonue2021/challenge/) 1st Prize Winner at CVPR 2021
+    
+   
 4. Edge Computing
    * Using edge device to extract traffic insights [[3]](#3)
      
