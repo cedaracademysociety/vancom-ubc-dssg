@@ -21,7 +21,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
    Time: December 1-31, 2020
    
    Assets: 364 location-based Assets in the City of Surrey, British Columbia, Canada
-   
+
    [![map](https://s3.amazonaws.com/data.pwfh.org/ubcdssg/pic1.png)](https://api.mapbox.com/styles/v1/scotthughes/ckq7op9qz5zom17pj0pcv2y83.html?fresh=true&access_token=pk.eyJ1Ijoic2NvdHRodWdoZXMiLCJhIjoiY2p3bWg5OTc5MGJ0NzRha2VlbXFtOTZheSJ9.c4EyzyAn28dXg3HujMoarg#10.01/49.112/-122.7691)
 
    Description: The file contains full-YOLOv3-extracted information from raw static image files. For that reason, please ignore the "MOV index" part (this is for clients who need aggregated and scaled data) in the Users' Guide. 
@@ -57,6 +57,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
    
    Asset: 1 location-based Asset: 104 Ave And 140 St
 
+
 **Data and tools from other sources:**
 * [Interesting datasets](https://data.surrey.ca/dataset) on the City of Surrey here 
   
@@ -76,7 +77,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
   * [Geocoding An Intersection with Open Street Map data](https://www.r-bloggers.com/2020/08/geocoding-an-intersection-with-open-street-map-data/)
   * [DataBC GeoCoder API](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/location-services/geocoder)
 
-
+<strike>
 ### Sample Code:
 ##### Requirements
 * os
@@ -87,6 +88,7 @@ Click to download a high-level [VanCom Mobility Data Users' Guide.](https://5rv1
 * numpy
 * geopandas
 ##### [coming soon] ....
+</strike>
 
 ### Potential Directions:
 ##### Applications
@@ -116,6 +118,14 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
     [Bloomberg article: High-Frequency Data Prove Their Staying Power With Fed’s Buy-In](https://www.bloomberg.com/news/articles/2020-09-15/high-frequency-data-prove-their-staying-power-with-fed-s-buy-in)
 
 6. Weather influence on Mobility
+
+7. Bike routes monitoring
+
+
+| Cam and Shared Traffic| Cam and Bike Lanes |
+| :---         |     :---:      |
+| <img src="https://s3.amazonaws.com/data.pwfh.org/ubcdssg/overlay+of+cam+and+Shared+Traffic.png" width="200" height="150">   | <img src="https://s3.amazonaws.com/data.pwfh.org/ubcdssg/overlay+of+cam+and+Bike+Lanes.png" width="300" height="150">  | 
+
 
 ##### Infrastructure
 1. Bias correction
@@ -173,6 +183,13 @@ and [Canadian Economics Society Annual Meeting 2021 presentation](https://cea202
 
    * [ESP32](http://esp32.net/) and ESP32-CAM
 
+6. Scalable Object Detection Pipeline
+    
+   * NVIDIA, Deploying a Scalable Object Detection Inference Pipeline [Blog: Intro](https://developer.nvidia.com/blog/deploying-a-scalable-object-detection-inference-pipeline/)
+   * NVIDIA, Deploying a Scalable Object Detection Inference Pipeline [Blog: The Inferencing Process](https://developer.nvidia.com/blog/deploying-a-scalable-object-detection-pipeline-the-inferencing-process-part-2/)
+
+7. [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)
+<img src="https://s3.amazonaws.com/data.pwfh.org/ubcdssg/fps_map_pp_detection.png">
 
 ### Recent Update:
 * VanCom partnership with industry leader SafeGraph:
